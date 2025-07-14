@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Node Details</title>
+</head>
+<body>
+    <h1>Node: {{ node_url }}</h1>
+    <h2>Chain Length: {{ chain['length'] }}</h2>
+    <pre>{{ chain['chain'] | tojson(indent=2) }}</pre>
+    <h2>Registered Nodes:</h2>
+    <pre>{{ registered_nodes['nodes'] | tojson(indent=2) }}</pre>
+</body>
+</html>
